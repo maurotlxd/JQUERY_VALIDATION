@@ -25,8 +25,7 @@ $("#frmEjemplo6").validate({
 		}
 	},
             errorPlacement: function(error,element){
-              error.addClass("rojo");
-              error.insertAfter(element)
+              error.addClass("rojo").insertAfter(element);
             },
            highlight: function (element) {
            	   $(element).removeClass('is-valid').addClass('is-invalid');
