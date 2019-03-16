@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	
+</head>
+
+<body>
+	<div class="row"></div>
+	<div class="row">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<form method="post" id="frmEjemplo5" name="frmEjemplo5">
+		
+			<div class="form-group">
+				<label for="usuario">Usuario</label>
+				<input type="text" name="usuario" id="usuario" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="clave">Contraseña</label>
+				<input type="password" name="clave" id="clave" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label for="claveConfirm">Repetir contraseña</label>
+				<input type="password" name="claveConfirm" id="claveConfirm" class="form-control" required>
+			</div>
+
+			
+			<div class="form-group">
+				<input type="submit" value="Validar" name="agregar" id="agregar" class="btn btn-primary">
+			</div>
+				</form>
+		</div>
+		<div class="col-lg-4"></div>
+	</div>
+	
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/validation/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/validation/localization/messages_es.js"></script>
+<script type="text/javascript" src="js/validar.js"></script>
+</body>
+</html>
