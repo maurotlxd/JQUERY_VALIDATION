@@ -25,12 +25,10 @@ $("#frmEjemplo6").validate({
 		}
 	},
            highlight: function (element) {
-           	   $(element).removeClass('is-valid');
-               $(element).addClass('is-invalid');
+           	   $(element).removeClass('is-valid').addClass('is-invalid');
            },
            unhighlight: function (element) {
-               $(element).removeClass('is-invalid');
-               $(element).addClass('is-valid');
+               $(element).removeClass('is-invalid').addClass('is-valid');
            }
 });
 });
