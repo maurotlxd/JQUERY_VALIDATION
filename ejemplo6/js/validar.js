@@ -24,6 +24,10 @@ $("#frmEjemplo6").validate({
 			equalTo: "#clave"
 		}
 	},
+            errorPlacement: function(error,element){
+              error.addClass("rojo");
+              error.insertAfter(element)
+            },
            highlight: function (element) {
            	   $(element).removeClass('is-valid').addClass('is-invalid');
            },
